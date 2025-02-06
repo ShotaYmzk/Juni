@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シフト管理システム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>シフト管理システム</h1>
+    <form id="shift-form">
+        <label for="name">名前:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="date">日付:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="shift">シフト:</label>
+        <select id="shift" name="shift" required>
+            <option value="morning">朝</option>
+            <option value="afternoon">昼</option>
+            <option value="night">夜</option>
+        </select><br><br>
+
+        <button type="submit">送信</button>
+    </form>
+
+    <div id="shifts">
+        <h2>登録されたシフト</h2>
+        <ul id="shift-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
